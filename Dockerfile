@@ -7,6 +7,6 @@ COPY \
   /root/
 
 RUN apk add git g++ make asciidoc
-RUN cd /opt && git clone https://gitlab.com/git-latexdiff/git-latexdiff.git && cd /opt/git-latexdiff && make install
+RUN cd /opt && git clone https://gitlab.com/git-latexdiff/git-latexdiff.git
 
 ENTRYPOINT ["/root/entrypoint.sh"]
