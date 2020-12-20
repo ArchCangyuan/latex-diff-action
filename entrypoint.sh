@@ -120,7 +120,7 @@ done <<< "$root_file"
 
 if [[ -n "$compile_diff" ]]; then
   info "latex diff" 
-  git-latexdiff --verbose --main "$root_file"  --no-view -o diff.pdf --cleanup all --ignore-makefile $(git rev-parse HEAD^) --
+  git-latexdiff --verbose --main "$root_file"  --no-view -o diff.pdf --cleanup all --ignore-makefile $(git rev-parse HEAD~) --
 fi
 
 if [[ -n "$with_stats" ]]; then
